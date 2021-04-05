@@ -1,0 +1,10 @@
+name: "External Api Action"
+description: "Call an external Api"
+
+outputs:
+  joke-output:
+    description: This is the resulting joke from Api
+
+runs:
+  using: "node12"
+  main: "main.js"
