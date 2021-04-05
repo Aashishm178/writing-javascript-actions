@@ -1,5 +1,21 @@
 name: "Hello Action"
 description: "Say Hello"
+
+inputs:
+  first-greeting:
+    description: "Whom would you like to greet"
+    required: true
+    default: "John Doe"
+  
+  second-greeting:
+    description: "Another person to greet"
+    required: true
+    default: "Jenny Doe"
+
+  third-greeting:
+    description: "Third greeting"
+    required: false
+
 runs:
   using: "node12"
   main: "main.js"
