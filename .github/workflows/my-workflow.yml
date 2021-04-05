@@ -15,4 +15,9 @@ jobs:
           second-greeting: "Rathore"
       - name: External Api
         uses: ./.github/actions/joke-action
+      - name: Issue Create
+        uses: ./.github/issue-maker
+        with:
+          repo-token: ${{secrets.GITHUB_TOKEN}}
+          joke: ${{steps.jokes.output.joke-output}}
         
