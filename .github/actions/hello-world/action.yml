@@ -1,0 +1,5 @@
+name: "Hello Action"
+description: "Say Hello"
+runs:
+  using: "node12"
+  main: "main.js"
