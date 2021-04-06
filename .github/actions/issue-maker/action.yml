@@ -1,0 +1,16 @@
+name: "I am a issue maker"
+description: "Make an issue whenever shit happens"
+
+inputs:
+  joke:
+    description: "Joke Input from joke-action"
+  issue-title:
+    description: "Will be the title of our issue"
+    required: true
+    default: "You fucked up"
+  repo-token:
+    description: "Creds for doing stuff"
+
+runs:
+  using: "node12"
+  main: "index.js"
